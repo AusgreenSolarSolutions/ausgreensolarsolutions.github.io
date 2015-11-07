@@ -1,20 +1,1096 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
 
-  <h1>Posts</h1>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <title>BuiltForFifty - We Will Build Your Website for $50</title>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-</div>
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">BuiltForFifty</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#process">Process</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <!--<div class="intro-lead-in">Welcome To Our Studio!</div>-->
+                <div class="intro-heading">We Will Build Your Website for <br><span class="price">$50</span></div>
+                <a href="#features" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">That's really cheap!</h2>
+                    <h3 class="section-subheading text-muted">But while "cheap" usually relates to "poor quality", here is what you get for a mere $50. <br>Then decide for yourself.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-flash fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">We Build Fast</h4>
+                    <p class="text-muted">We charge less because we build fast. Place an order, choose a template, answer a couple of questions on the content for your website and we will deliver within a day.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">All the templates that you choose will be responsive by default. 80% of all adults with internet access now have a smartphone. If your website isn't responsive you might lose out.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Good design</h4>
+                    <p class="text-muted">We guarantee that your website will <i><strong>not</strong></i> go on the pages of <a href="http://www.webpagesthatsuck.com/" target="_blank">Web Pages That Suck</a>. We have a good eye for design and if you think this website looks good, we can build the same for you.</p>
+                </div>
+            </div>
+
+<div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-list fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Your choice of CMS</h4>
+                    <p class="text-muted">For $50, we will build your website on the latest <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a> build. However, if you wish to use another CMS for your website, we can also install them for you af varying costs.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Fully customisable</h4>
+                    <p class="text-muted">Our <a class="page-scroll" href="#pricing-tables">base product</a> comes with a few standard add-ons, which we will add over time. However, we also offer a multitude of extensions you can add to your website if you choose.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-file-code-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Well-coded</h4>
+                    <p class="text-muted">We only choose and work on templates that are coded well and according to the latest web standards. If you so choose to take your code elsewhere, your developer will be able to work with our code easily.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Here are some examples of work we have previously done.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/careandgrowth.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Care and Growth</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/zawia.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Zawia Ebrahim</h4>
+                        <p class="text-muted">Articles & Audio Website</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/suite.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Schuitema Associates</h4>
+                        <p class="text-muted">Creative Suite</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/intent.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Intent Publishing</h4>
+                        <p class="text-muted">E-commerce Website</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/learning.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Care and Growth Academy</h4>
+                        <p class="text-muted">E-learning Website</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/souk.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>SOUK</h4>
+                        <p class="text-muted">E-commerce marketplace</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="process">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Process</h2>
+                    <h3 class="section-subheading text-muted">This is how we will build your online face.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step 1: Choice</h4>
+                                    <h4 class="subheading">Make the choices for your business</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">In putting together a package for you, choose your  CMS, your desired template from our list and the additions that you would like for your website.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>STEP 2: INFORMATION</h4>
+                                    <h4 class="subheading">What do you want to say?</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Here's where we collect information relating to your business and what you would like to present to the world. It is as easy as filling up a form about your business. Leave the questions to us!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>STEP 3: BUILD</h4>
+                                    <h4 class="subheading">Just a minute!</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Once we have all the information we need to put on your website, and based on the design choices that you have made, we will build your website in a day.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>STEP 4: LIFT OFF!</h4>
+                                    <h4 class="subheading">Delivery and maintenance</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">We finally deliver your website as you ordered! You are now ready to spread the good news, sit back in your couch with your cup of coffee and be pleased with the wonderful (yet tiny) investment in your business that you've just made.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <a class="timeline-image typeform-share link" style="cursor: pointer;text-decoration:none;" href="https://builtforfifty.typeform.com/to/rjDPyB" data-mode="1" target="_blank">
+                                <h4>Click
+                                    <br>To Start
+                                    <br>Now!</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- FAQ Section -->
+    <section id="faq" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Frequently Asked Questions</h2>
+                    <h3 class="section-subheading text-muted">Questions? We answer the most common ones here.</h3>
+                </div>
+            <div class="col-md-8 col-md-offset-2">
+
+                <!-- Tab panes -->
+                <div class="tab-content faq-cat-content">
+                    <div class="tab-pane active in fade" id="faq-cat-1">
+                        <div class="panel-group" id="accordion-cat-1">
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
+                                        <h4 class="panel-title">
+                                            What do I get for $50?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>For $50 you get:
+                                            <ul>
+                                                <li>A one page website built on <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. </li>
+                                                <li>We will build your website with strictly guided specifications that you will select from our list and answers that you will provide to our questions.</li>
+                                                <li>We will use stock photos from the best free stock resource websites. These resources are listed below.</li>
+                                                <li>We will design and build the website, as well as upload the files to your backend and push it live.</li>
+                                                <li>We will install a free contact form for your website, just like the one we have below.</li>
+                                                <li>We will install and use Font Awesome icons for use on your website.</li>
+                                                <li>We will send you a basic privacy policy for use of your website and put it on your website as well.</li>
+                                            </ul>
+                                            Over time, we might add to these core features depending on the complexity involved for that particular feature and how they can integrate with our templates.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-11">
+                                        <h4 class="panel-title">
+                                            Why one page websites?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-11" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>The below pointers are taken from this article: <a href="http://www.webdesignerdepot.com/2014/12/how-to-design-the-perfect-single-page-website/" target="_blank">How to Design the Perfect Single Page Website</a>.</p>
+                                        <hr>
+                                        <h5>They’re intuitive to use</h5>
+                                            <p>By default, all a user needs to know to navigate a single page site is how to scroll. You might include arrows or other navigational clues, but with rare exception, simply scrolling will bring your visitors from one section to the next.</p>
+                                        <h5>It can be faster and easier to maintain</h5>
+                                            <p>While this one is not a given, a well-coded single page site is probably going to be faster to code than a multi-page site. The design process can sometimes take less time, though that depends on how complex the single page is going to be.</p>
+                                        <h5>You’re forced to simplify</h5>
+                                            <p>This one builds off the previous point. When you only have a single page to work with, you have to simplify things to their most essential components. No more pages and pages of useless marketing propaganda. You have to get to the point right away.</p>
+                                        <h5>Better SEO potential</h5>
+                                            <p>Quality inbound links are a big part of how well a website performs in search engines. While search engines aren’t necessarily the largest traffic source for a lot of sites, they’re still generally important. By only having one page, you only have one page being linked to. That can increase the importance of the site as far as search engines go.</p>
+                                        <h5>Storytelling can increase action</h5>
+                                            <p>Single page sites often use a storytelling angle that multi-page sites aren’t as good at. This can increase conversions and inspire visitors to take action.</p>
+                                        <h5>Easier to organize</h5>
+                                            <p>There are no more endless lists of pages and sub-pages to organize. No more wondering if this page or that page should be a parent or a child. No more huge navigation menus and sub-menus. It’s all on one page. And whether you decide to include navigational links, or simply let users scroll, is up to you and whether you think it will add to the user experience or not. That’s just not an option when a site has multiple pages.</p>
+                                        <h5>Reduced bandwidth</h5>
+                                            <p>While this isn’t as much of an issue on the hosting end anymore, consider how many users are accessing your site using mobile devices these days. Decreasing the amount of bandwidth your site takes is appreciated by users with limited data plans.</p>
+                                        <h5>Eliminate mobile sites</h5>
+                                            <p>A single-page site is, by necessity, not complex. Making the design responsive is generally easier. Simplified navigation and similar changes also make a design that works well on small screens easier.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2">
+                                        <h4 class="panel-title">
+                                            Why do you charge so little?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            In short:
+                                            <ol>
+                                                <li>We build fast. Less man hours = cheaper cost.</li>
+                                                <li>We only use templates we are familiar with where we know we can work quickly.</li>
+                                                <li>We keep costs low by doing the same thing over and over again and doing it well.</li>
+                                                <li>We only use free stock photos. See the full list in another question below.</li>
+                                                <li>Obviously we also charge a much lower per hour rate than other designers or other web design companies.</li>
+                                            </ol></p>
+                                        <p>Our investment in BuiltForFifty is less for the money and more for seeing better designed websites on the internet. Many companies wish to harness the power of the internet but are unable to afford or justify a budget to buy professional web design services.</p>
+                                        <p>Click <a href="#features" class="page-scroll">here</a> to see the list of our features.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-8">
+                                        <h4 class="panel-title">
+                                            $50 is really cheap. How do you earn a keep?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-8" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        We hold a full time jobs as developers. Our investment in BuiltForFifty is less for the money and more for seeing better designed websites on the internet. Many companies wish to harness the power of the internet but are unable to afford or justify a budget to buy professional web design services.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-12">
+                                        <h4 class="panel-title">
+                                            Can we host our website with you?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-12" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>We are currently working on a $9/month package where we will:</p>
+                                        <ul>
+                                            <li>Register a domain on your behalf (domain sold separately)</li>
+                                            <li>Host your website</li>
+                                            <li>Maintain your website</li>
+                                            <li>Make up to 3 small changes a month</li>
+                                            <li>Answer support related enquiries</li>
+                                            <li>Enable <a href="https://www.google.com/intx/en_sg/work/apps/business/" target="_blank">Google Apps for Work</a> (each email for $5/user per month)</li>
+                                            <li>If you prefer not to use Google Apps for Work, we will manage your emails and help you set it up to use it.</li>
+                                        </ul>
+                                        <p>Would you like to know when this service is released? Drop us a line using the <a href="#contact" class="page-scroll">contact form</a> below.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
+                                        <h4 class="panel-title">
+                                            Do you use templates?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Yes we do. We only use free templates or multi-use license templates. </p>
+                                        <p>For Bootstrap:</p>
+                                        <ul>
+                                            <li><a href="https://onepagelove.com/" target="_blank">One Page Love</a></li>
+                                            <li><a href="http://www.bootstrapzero.com/" target="_blank">Bootstrap Zero</a></li>
+                                            <li><a href="https://wrapbootstrap.com/" target="_blank">Wrap Bootstrap</a></li>
+                                            <li><a href="https://bootswatch.com/" target="_blank">Bootswatch</a></li>
+                                            <li><a href="http://www.blacktie.co/" target="_blank">Black Tie Co.</a></li>
+                                            <li><a href="http://bootstrapbay.com/" target="_blank">Bootstrap Bay</a></li>
+                                            <li><a href="https://www.prepbootstrap.com/" target="_blank">Prep Bootstrap</a></li>
+                                            <li><a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></li>
+                                        </ul>
+                                        <p>For Wordpress:</p>
+                                        <ul>
+                                            <li><a href="http://oboxthemes.com/" target="_blank">Obox Themes</a></li>
+                                            <li><a href="http://themeforest.net/user/themewaves/portfolio" target="_blank">Themewaves</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-9">
+                                        <h4 class="panel-title">
+                                            Why should I Build For Fifty if I can get a Wix site for free?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-9" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Advertising. Wix will plaster their advertising all over your website. Do you want to look cheap? Spending $50 for your customer's user experience should be quite affordable. Speak to us using the contact form below if you would like us to lower the price further for you. If you are a charity we can build it for you at no cost.</p>
+                                        <p>Let's say that Wix removes their advertising or you are able to find another similar service for free without any advertising. Why should you still choose to work with us?</p>
+                                        <ol>
+                                            <li>We build websites quickly - we've had experience.</li>
+                                            <li>We know where to get the right resources for your website - for free.</li>
+                                            <li>We know what should go on your website and where for the best response.</li>
+                                            <li>For you to learn how to use the page builder, learn how things work, know which elements fit on which part of the page might take a significant amount of time.</li>
+                                        </ol>
+                                        <p>So ask yourself - how much is your time worth?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-10">
+                                        <h4 class="panel-title">
+                                            Why should I Build For Fifty if I can get Squarespace for $9/month?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-10" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Squarespace is awesome. Their cheapest plan is really affordable and includes plenty of services on a really great platform. They also provide several templates for building websites easily. So why should you choose us?</p>
+                                        <ol>
+                                            <li>We build websites quickly - we've had experience.</li>
+                                            <li>We know where to get the right resources for your website - for free.</li>
+                                            <li>We know what should go on your website and where for the best response.</li>
+                                            <li>For you to learn how to use the page builder, learn how things work, know which elements fit on which part of the page might take a significant amount of time.</li>
+                                        </ol>
+                                        <p>So ask yourself - how much is your time worth?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-4">
+                                        <h4 class="panel-title">
+                                            What payment terms do you accept?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        As of now we receive payments only through PayPal. This is until Stripe decides to launch in Singapore. Once there is a way for Stripe payments we will accept payments through Stripe.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-5">
+                                        <h4 class="panel-title">
+                                            Do you have a refund policy?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Our policy lasts 7 days. If 7 days have gone by since your purchase, unfortunately we can’t offer you a refund. To be eligible for a return, you must prove that BuiltForFifty did not build your website according to the specifications that you requested. If we did but you are not satisfied, we offer discounts on changes that you wish to make.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-6">
+                                        <h4 class="panel-title">
+                                            Where are you based?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        For some time, we were based in Johannesburg, then Cape Town, South Africa. Currently we are based in Singapore and Malaysia.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-7">
+                                        <h4 class="panel-title">
+                                            Where do you get your photos from?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-7" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Photos are courtesy of:</p>
+                                        <ul>
+                                            <li><a href="http://www.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a></li>
+                                            <li><a href="http://www.unsplash.com/" target="_blank">Unsplash</a></li>
+                                            <li><a href="http://nos.twnsnd.co/" target="_blank">New Old Stock</a></li>
+                                            <li><a href="http://www.gratisography.com/" target="_blank">Gratisography</a></li>
+                                            <li><a href="https://stocksnap.io/" target="_blank">StockSnap.io</a></li>
+                                            <li><a href="http://startupstockphotos.com/" target="_blank">Startup Stock Photo</a></li>
+                                            <li><a href="http://www.lifeofpix.com/" target="_blank">Life of Pix</a></li>
+                                            <li><a href="http://www.pexels.com/" target="_blank">Pexels</a></li>
+                                            <li><a href="http://jaymantri.com/" target="_blank">Jay Mantri</a></li>
+                                            <li><a href="http://www.splitshire.com/" target="_blank">SplitShire</a></li>
+                                            <li><a href="http://instastock.co/" target="_blank">InstaStock</a></li>
+                                            <li><a href="http://negativespace.co/photos/" target="_blank">Negative Space</a></li>
+                                            <li><a href="http://thestocks.im/" target="_blank">The Stocks</a></li>
+                                            <li><a href="http://www.endlessicons.com/" target="_blank">Endless Icons</a></li>
+                                            <li><a href="http://iconmonstr.com/" target="_blank">IconMonstr</a></li>
+                                        </ul>
+                                        <p>Photos from the above websites are free from Copyright Restrictions, and can be used anywhere for anything for free. Try them!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-faq">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-13">
+                                        <h4 class="panel-title">
+                                            How do I start?
+                                            <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="faq-cat-1-sub-13" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><a href="/order">Click here to submit an order form based on your specifications.</a></p>
+                                        <p>We will contact you shortly after you submit the form.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Leave us a message for your questions, feedback, or a personalised quote.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Built For Fifty 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://www.twitter.com/builtforfifty" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="http://www.facebook.com/builtforfifty" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="http://www.linkedin.com/builtforfifty" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#privacyModal" data-toggle="modal">Privacy Policy</a>
+                        </li>
+                        <li><a href="#termsModal">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Care and Growth</h2>
+                            <p class="item-intro text-muted">Website design, blog, web presence</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/careandgrowth-preview.jpg" alt="">
+                            <p><strong>Schuitema Associates</strong> is a transformation consultancy based in South Africa & Pakistan established since 1989. Schuitema coaches in areas of Leadership, Team & Personal Excellence with a team of 22 consultants around the globe. Their clients include the University of Cambridge, Shell, First National Bank & Barclays.</p>
+                            <p><strong>Care and Growth</strong> is their flagship product, is a universal leadership thematic that is based on the premise that we exist to serve the other, and in doing so, we actually serve the highest of our own self-interest.</p>
+                            <p>Schuitema requested a website that would be their face on the web. The website incorporates a blog, advertisements of their products, social media, CDN, ordering forms for their events and forums for participants of their courses.</p>
+                            <p>BuiltForFifty built the entire website from scratch, redesigning the company's logo, introducing primary colours for the business, assimilating old and new information from their marketing department and incorporating the latest web design trends.</p>
+                            <p>Careandgrowth.com is built on Wordpress, running the Flatco theme from Themewaves.</p>
+                            <ul class="list-inline">
+                                <li><strong>Date:</strong> March 2014</li>
+                                <li><strong>Client:</strong> Schuitema Associates</li>
+                                <li><strong>Category:</strong> Web Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Zawia Ebrahim</h2>
+                            <p class="item-intro text-muted">Articles, audio, media downloads</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/zawia-preview.jpg" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/zawia-preview-2.jpg" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/zawia-preview-3.jpg" alt="">
+                            <p><a href="http://www.zawiaebrahim.com">Zawia Ebrahim</a> is a Darqawi Shadhili Sufi Muslim center based in Johannesburg, South Africa.</p>
+                            <p>Zawia Ebrahim requested for us to design a website to post transcriptions of their audio discourses as well as the audio themselves. They also wanted the ability to display their publications and link them to the websites where they were sold.</p>
+                            <p>BuiltForFifty designed a website for them off a template from Obox Themes, using Google Fonts for their fonts and Wordpress for their CMS.</p>
+                            <p>Zawiaebrahim.com is built on Wordpress, running the Principles theme from Obox Themes.</p>
+                            <ul class="list-inline">
+                                <li><strong>Date:</strong> June 2014</li>
+                                <li><strong>Client:</strong> Zawia Ebrahim</li>
+                                <li><strong>Category:</strong> Web Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Creative Suite</h2>
+                            <p class="item-intro text-muted">Creative identity, logos, business card design, letterhead</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/suite-preview.jpg" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/CI.jpg" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/CI-2.jpg" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/CI-3.jpg" alt="">
+                            <p><strong>Schuitema Associates</strong> is a transformation consultancy based in South Africa & Pakistan established since 1989. Schuitema coaches in areas of Leadership, Team & Personal Excellence with a team of 22 consultants around the globe. Their clients include the University of Cambridge, Shell, First National Bank & Barclays.</p>
+                            <p>Schuitema requested that we design their corporate identity for use across their business. We set the corporate identity standards and guidelines for their business, including the design of their business cards for their distributed teams, letterheads, logo designs, color schemes and font selections.</p>
+                            <p>We delivered business cards for each member of their team in the required margins for their printer, letterheads in Word format for their international branches and a Corporate Identity guidelines booklet for their reference.</p>
+                            <ul class="list-inline">
+                                <li><strong>Date:</strong> April 2014</li>
+                                <li><strong>Client:</strong> Schuitema Associates</li>
+                                <li><strong>Category:</strong> Creative identity, logos, business card design, letterhead</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Intent Publishing</h2>
+                            <p class="item-intro text-muted">E-commerce website for an independent publishing outfit</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/intent-preview.jpg" alt="">
+                            <p> <a href="https://www.intentpublishing.com">Intent Publishing</a> is an independent publishing company from Johannesburg, South Africa. They requested us to develop the ability for them to start selling physical books on their website.</p>
+                            <p>BuiltForFifty designed a website for them off a template from Obox Themes, using Google Fonts for their fonts, Wordpress for their CMS, Woocommerce for their e-commerce and Receiptful for their e-mail receipts.</p>
+                            <p>Intentpublishing.com is built on Wordpress, running the Flatpack theme from Obox Themes.</p>
+                            <ul class="list-inline">
+                                <li><strong>Date:</strong> August 2014</li>
+                                <li><strong>Client:</strong> Intent Publishing</li>
+                                <li><strong>Category:</strong> Web Design, E-commerce</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Care and Growth Academy</h2>
+                            <p class="item-intro text-muted">Developing a coaching curriculum onto an online platform</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/learning-preview.jpg" alt="">
+                            <p>Schuitema Human Excellence Group came to us in December 2014 for help in developing an online school which they would call the Care and Growth Academy. This academy would house their coaching, training videos, quizzes, lectures which would bring their core business - live training - to any user around the world.</p>
+                            <p>BuiltForFifty set up a website for them on Fedora (now Teachable) and converted their coaching curriculum into a full web course. This included the poster design, web design, videos, lectures, readings, documents, quizzes and payment set-up.</p>
+                            <p>Care and Growth Academy is built on Teachable.</p>
+                            <ul class="list-inline">
+                                <li><strong>Date:</strong> December 2014</li>
+                                <li><strong>Client:</strong> Care and Growth Academy</li>
+                                <li><strong>Category:</strong> Web Design, Course Design, E-learning</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>SOUK</h2>
+                            <p class="item-intro text-muted">E-commerce marketplace</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/souk-preview.jpg" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/souk-preview-2.jpg" alt="">
+                            <p><a href="http://www.atsouk.com">SOUK</a> is a marketplace built to allow home-based businesses to be connected to a larger network of buyers, enthusiasts and fans. They are a enthusiastic team who are building a global online marketplace to help muslim entrepreneurs do what they love and share their love with others.</p>
+                            <p>Visit the SOUK website here: <a href="http://www.atsouk.com">www.atsouk.com</a></p>
+                            <ul class="list-inline">
+                                <li><strong>Date:</strong> March 2015</li>
+                                <li><strong>Client:</strong> SOUK</li>
+                                <li><strong>Category:</strong> Web application</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="portfolio-modal modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>builtforfifty.com Privacy Policy</h2>
+                            <div class="left-align">
+                            <p class="item-intro text-muted">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally identifiable information' (PII) is being used online. PII, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>
+                            <strong>What personal information do we collect from the people that visit our blog, website or app?</strong>
+                            <p>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, phone number, credit card information, billing address or other details to help you with your experience.</p>
+                            <strong>
+                            When do we collect information?</strong>
+                            <p>
+                            We collect information from you when you place an order, fill out a form or enter information on our site.</p>
+                            <strong>
+                            How do we use your information?</strong>
+                            <p>
+                            We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:
+                            <ul><li>To improve our website in order to better serve you.</li>
+                                <li>To allow us to better service you in responding to your customer service requests.</li>
+                                <li>To quickly process your transactions.</li></ul>
+</p>
+                            <strong>
+How do we protect visitor information?</strong>
+                            <p>
+<ul><li>We do not use vulnerability scanning and/or scanning to PCI standards.</li>
+<li>We do not use Malware Scanning.</li>
+<li>We do not need an SSL because: We deal with sensitive information on Typeform, which is secure and has its own SSL certificate and is PCI compliant.</li>
+</ul></p>
+                            <strong>
+
+Do we use 'cookies'?</strong>
+                            <p>
+
+We do not use cookies for tracking purposes.
+</p><p>
+You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser's Help menu to learn the correct way to modify your cookies.
+</p><p>
+If you disable cookies off, some features will be disabled that make your site experience more efficient and some of our services will not function properly. However, you can still place orders.</p>
+                            <strong>
+
+Third Party Disclosure</strong>
+                            <p>
+
+We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information unless we provide you with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety. 
+</p><p>
+However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.</p>
+                            <strong>
+
+Third party links</strong>
+                            <p>
+
+Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</p>
+                            <strong>
+
+Google</strong>
+                            <p>
+
+Google's advertising requirements can be summed up by Google's Advertising Principles. They are put in place to provide a positive experience for users. <a href="https://support.google.com/adwordspolicy/answer/1316548?hl=en">https://support.google.com/adwordspolicy/answer/1316548?hl=en</a>
+</p><p>
+We have not enabled Google AdSense on our site but we may do so in the future.
+</p>
+                            <strong>
+California Online Privacy Protection Act</strong>
+                            <p>
+
+CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require a person or company in the United States (and conceivably the world) that operates websites collecting personally identifiable information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals with whom it is being shared, and to comply with this policy. - See more at: <a href="http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf">http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf</a>
+</p><p>
+According to CalOPPA we agree to the following:
+<ul><li>Users can visit our site anonymously.</li>
+<li>Once this privacy policy is created, we will add a link to it on our home page, or as a minimum on the first significant page after entering our website.</li>
+<li>Our Privacy Policy link includes the word 'Privacy', and can be easily be found on the page specified above.
+</li>
+<li>Users will be notified of any privacy policy changes on our Privacy Policy Page.</li>
+<li>Users are able to change their personal information by emailing us.</li></ul>
+</p>
+                            <strong>
+How does our site handle do not track signals?</strong>
+                            <p>
+We honor do not track signals and do not track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.
+</p>
+                            <strong>
+Does our site allow third party behavioral tracking?</strong>
+                            <p>
+We do not allow third party behavioral tracking.
+</p>
+                            <strong>
+COPPA (Children Online Privacy Protection Act)</strong>
+                            <p>
+
+When it comes to the collection of personal information from children under 13, the Children's Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, the nation's consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online.
+</p><p>
+We do not specifically market to children under 13.
+</p>
+                            <strong>
+Fair Information Practices</strong>
+                            <p>
+
+The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.
+</p><p>
+In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:<ul><li>
+We will notify the users via email within 1 business day.</li><li>
+We will notify the users via in site notification within 1 business day.</li></ul>
+</p><p>
+We also agree to the individual redress principle, which requires that individuals have a right to pursue legally enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or a government agency to investigate and/or prosecute non-compliance by data processors.
+</p>
+                            <strong>
+CAN SPAM Act</strong>
+                            <p>
+
+The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.
+</p><p>
+To be in accordance with CANSPAM we agree to the following: If at any time you would like to unsubscribe from receiving future emails, you can email us at and we will promptly remove you from ALL correspondence.
+
+</p>
+                            <strong>
+Contacting Us</strong>
+                            <p>
+
+If there are any questions regarding this privacy policy you may contact us using the information below.
+</p><p>
+<a href="builtforfifty.com">builtforfifty.com</a><br>
+<a href="mailto:hello@builtforfifty.com">hello@builtforfifty.com</a></p>
+                        </div>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Policy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+	
+	<script>
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/	share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
+	</script>
+
+</body>
+
+</html>
