@@ -6,7 +6,10 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
+.btn-inah {
+    background-color: #D7CB74;
 
+}
 body {
   background-color: #f2f2f2;
     font-family: 'Lato', sans-serif;
@@ -94,7 +97,7 @@ a:after {
 }
 
 .navbar-default .navbar-brand {
-	color: white;
+	color: #D7CB74;
 }
 
 .navbar-default .navbar-nav > li > a {
