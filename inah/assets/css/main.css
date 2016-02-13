@@ -6,8 +6,14 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
+
+ .navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+    cursor: default;
+ }
 .btn-inah {
     background-color: #D7CB74;
+    color: #fff;
 }
 .navbar-brand {
     padding: 5px;
