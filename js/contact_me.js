@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://api:key-209f95e8980d00b4450c045190d940cd@api.mailgun.net/v3/mg.builtforfifty.com/messages?from=maarof@gmail.com&to=fawyna@gmail.com&text=this%20is%20the%20text given",
                 type: "POST",
                 data: {
                     name: name,
