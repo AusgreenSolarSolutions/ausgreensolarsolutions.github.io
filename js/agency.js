@@ -33,8 +33,5 @@ $('body > *').not('nav').click(function() {
 });
 
 if (window.location.search === '?thank_you') {
-    $('header').after('<div class="topbar_thankyou"/>');
-    setTimeout(function(){
-    $('.topbar_thankyou').hide();
-    },3000)
+alert('Message sent, thank you!');
 }
