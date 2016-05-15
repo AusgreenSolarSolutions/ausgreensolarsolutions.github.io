@@ -910,3 +910,11 @@ span.price {
     font-size: 13px;
     font-weight: normal;
 }
+
+.topbar_thankyou {
+
+}
+
+.topbar_thankyou::before {
+    content: 'Thank you';
+}
